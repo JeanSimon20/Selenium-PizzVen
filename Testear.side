@@ -1,0 +1,86 @@
+{
+  "id": "1e66852d-8ac3-4e23-b9a7-ed2538b691d8",
+  "version": "2.0",
+  "name": "Testear Paginas Web",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "0b03981e-dd36-481a-b13a-cff2b8c06ddc",
+    "name": "Testear Video",
+    "commands": [{
+      "id": "dc886c81-8ef8-444c-930f-bba4b2b15f59",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51867162-cf4a-40c7-aa8a-765c45fb7044",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a5bebb9-e957-4a9b-9026-1553627e2b7a",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0634a9d-5a3a-4f71-b282-3ef7119383d1",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "VAlle grande cañete"
+    }, {
+      "id": "bfb8581f-b572-4cb5-b660-a22d0f4e91c7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6f464456-0202-4b04-a3a5-a634e012508c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytd-channel-renderer > #img",
+      "targets": [
+        ["css=.ytd-channel-renderer > #img", "css:finder"],
+        ["xpath=(//img[@id='img'])[52]", "xpath:attributes"],
+        ["xpath=//div[@id='avatar']/yt-img-shadow/img", "xpath:idRelative"],
+        ["xpath=//div/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "255b5d1c-38df-4376-9d89-0c82027925df",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0b03981e-dd36-481a-b13a-cff2b8c06ddc"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
